@@ -70,4 +70,7 @@ npm run dev
 의도적인 버그를 주입하여 Cypress의 에러 캡쳐 기능과 디버깅 과정을 실습했습니다.
 - **의도된 에러**: 감정 이모지 데이터(`types.ts`)에서 우울함(sad)을 🥺 대신 😭로 잘못 매핑하여 에러 발생 유도.
 - **결과**: 테스트 실패 시 `cypress/screenshots` 폴더에 에러 발생 순간의 화면 캡쳐본 자동 저장됨 확인.
+
+  ![Cypress Error Screenshot](cypress/screenshots/mood.cy.ts/Mood%20Tracker%20App%20--%20should%20allow%20user%20to%20record%20a%20mood%20and%20display%20it%20on%20the%20calendar%20(failed).png)
+
 - **해결 과정**: Cypress 에러 로그를 통해 실패 지점을 파악하고 코드를 정상으로 원복 완료.
